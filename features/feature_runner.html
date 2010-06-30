@@ -1,0 +1,43 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+  "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+  <title>Features</title>
+  <link rel="stylesheet" type="text/css" href="../public/lib/jasmine/lib/jasmine.css">
+  <link rel="stylesheet" type="text/css" href="../public/ball_dragger.css">
+
+  <script type="text/javascript" src="../public/lib/jasmine/lib/jasmine-0.10.4.js"></script>
+  <script type="text/javascript" src="../public/lib/jasmine/lib/TrivialReporter.js"></script>
+  <script type="text/javascript" src="../public/lib/jasmine/lib/consolex.js"></script>
+
+  <script type="text/javascript" src="../public/lib/jquery-1.4.2.js"></script>
+  <script type="text/javascript" src="../public/lib/jquery-ui-1.8.2.custom.min.js"></script>
+  <script type="text/javascript" src="../public/lib/jquery.simulate.js"></script>
+
+  <script type="text/javascript" src="../public/ball_dragger.js"></script>
+
+
+  <script type="text/javascript" src="../lib/custom_matchers.js"></script>
+  <script type="text/javascript" src="pressing_start_button.feature.js"></script>
+</head>
+<body>
+<script type="text/javascript">
+$(function() {
+  var jasmineEnv = jasmine.getEnv();
+  jasmineEnv.reporter = new jasmine.TrivialReporter();
+  jasmineEnv.execute();
+});
+</script>
+
+<div id="game">
+  <input type='button' id="start-button"></input>
+  <div id="results"></div>
+  <div id="field">
+    <div id="ball-start"></div>
+    <div id="ball-destination"></div>
+  </div>
+</div>
+
+</body>
+</html>
+
